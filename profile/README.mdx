@@ -51,14 +51,12 @@ Welcome to my GitHub profile! I'm a passionate software developer with a love fo
     This reduces the number of requests to the server and improves load times for returning visitors.
   -->
   <!--
-    The disable_animations=true parameter is added to the URL to optimize the image.
-    This reduces the file size and improves load time by disabling fancy SVG animations.
+    The following parameters are added to the URL to optimize the image:
+    - disable_animations=true: Reduces file size and load time by disabling SVG animations.
+    - hide=contribs,prs,issues: Reduces file size and backend processing time by excluding stats.
+    - hide_rank=true: Disables the rank calculation, which is computationally expensive.
   -->
-  <!--
-    The hide=contribs,prs,issues parameter is added to the URL to optimize the image.
-    This reduces the file size and backend processing time by excluding less important stats.
-  -->
-  <img src="https://github-readme-stats.vercel.app/api?username=MichaelBiegluk&show_icons=true&theme=radical&cache_seconds=86400&disable_animations=true&hide=contribs,prs,issues" alt="Michael Biegluk's GitHub stats" loading="lazy" />
+  <img src="https://github-readme-stats.vercel.app/api?username=MichaelBiegluk&show_icons=true&theme=radical&cache_seconds=86400&disable_animations=true&hide=contribs,prs,issues&hide_rank=true" alt="Michael Biegluk's GitHub stats" loading="lazy" />
 </details>
 
 <!--
