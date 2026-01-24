@@ -43,20 +43,14 @@ Welcome to my GitHub profile! I'm a passionate software developer with a love fo
 <details>
   <summary>Click to view GitHub stats</summary>
   <!--
-    The loading="lazy" attribute is added to ensure the image is only loaded
-    when it's about to be viewed, further optimizing the lazy-load behavior.
+    The following URL parameters optimize the GitHub stats image:
+    - cache_seconds=86400: Sets a 24-hour cache to reduce server requests.
+    - disable_animations=true: Disables SVG animations to reduce file size.
+    - hide=contribs,prs,issues,stars: Hides specific stats to reduce backend processing.
+    - hide_rank=true: Disables the expensive rank calculation.
+    The loading="lazy" attribute defers image loading until it is nearly in the viewport.
   -->
-  <!--
-    The cache_seconds parameter is set to 86400 (24 hours) to maximize cache efficiency.
-    This reduces the number of requests to the server and improves load times for returning visitors.
-  -->
-  <!--
-    The following parameters are added to the URL to optimize the image:
-    - disable_animations=true: Reduces file size and load time by disabling SVG animations.
-    - hide=contribs,prs,issues: Reduces file size and backend processing time by excluding stats.
-    - hide_rank=true: Disables the rank calculation, which is computationally expensive.
-  -->
-  <img src="https://github-readme-stats.vercel.app/api?username=MichaelBiegluk&show_icons=true&theme=radical&cache_seconds=86400&disable_animations=true&hide=contribs,prs,issues&hide_rank=true" alt="Michael Biegluk's GitHub stats" loading="lazy" />
+  <img src="https://github-readme-stats.vercel.app/api?username=MichaelBiegluk&show_icons=true&theme=radical&cache_seconds=86400&disable_animations=true&hide=contribs,prs,issues,stars&hide_rank=true" alt="Michael Biegluk's GitHub stats" loading="lazy" />
 </details>
 
 <!--
